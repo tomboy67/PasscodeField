@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PasscodeField'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PasscodeField.'
+  s.summary          = "Like an iOS passcode entry view."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    PasscodeField is an easy to use and confiure custom view that is perfect for
+    displaying results of a secure entry field like a PIN or password. It is inspired by the
+    iOS passcode screen that is used for unlocking devices. It is both IBDesignable and IBInspectable
+    which makes it simple to use and configure for your own project.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/PasscodeField'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/tomomura/PasscodeField'
+  s.screenshots     = 'https://github.com/tomomura/PasscodeField/blob/master/ExampleImages/example_passcode.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'rtomomura' => 'rtomomura@inet.jeis.co.jp' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/PasscodeField.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'famtom0518' => 'am.n04a@gmail.com' }
+  s.source           = { :git => 'https://github.com/tomomura/PasscodeField.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/famtom0518'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'PasscodeField/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PasscodeField' => ['PasscodeField/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end
