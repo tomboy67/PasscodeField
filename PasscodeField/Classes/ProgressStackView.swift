@@ -92,7 +92,7 @@ final class ProgressStackView: UIStackView {
     private func refreshCircleView() {
         self.arrangedSubviews.forEach { view in view.removeFromSuperview() }
         
-        for idx in 0...(self.length - 1) {
+        for _ in 0...(self.length - 1) {
             let circleView = CircleView(borderHeight: self.borderHeight, fillSize: self.fillSize, fillColor: self.fillColor)
             
             self.addArrangedSubview(circleView)
