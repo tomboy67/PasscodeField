@@ -12,7 +12,7 @@ import UIKit
     
     // MARK: - Properties
     
-    @IBInspectable var length: Int = 6 {
+    @IBInspectable public var length: Int = 6 {
         didSet {
             self.progressView.length = self.length
         }
@@ -24,19 +24,19 @@ import UIKit
         }
     }
     
-    @IBInspectable var borderHeight: CGFloat = 2.0 {
+    @IBInspectable public var borderHeight: CGFloat = 2.0 {
         didSet {
             self.progressView.borderHeight = self.borderHeight
         }
     }
     
-    @IBInspectable var fillColor: UIColor = UIColor.blackColor() {
+    @IBInspectable public var fillColor: UIColor = UIColor.blackColor() {
         didSet {
             self.progressView.fillColor = self.fillColor
         }
     }
     
-    @IBInspectable var fillSize: CGFloat = 20 {
+    @IBInspectable public var fillSize: CGFloat = 20 {
         didSet {
             self.progressView.fillSize = self.fillSize
         }
@@ -60,7 +60,7 @@ import UIKit
         self.setupView()
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         self.progressView = ProgressStackView(
             length: self.length,
             progress: self.progress,
