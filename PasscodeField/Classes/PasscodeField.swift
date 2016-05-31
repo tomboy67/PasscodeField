@@ -24,7 +24,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var borderHeight: CGFloat = 10.0 {
+    @IBInspectable var borderHeight: CGFloat = 2.0 {
         didSet {
             self.progressView.borderHeight = self.borderHeight
         }
