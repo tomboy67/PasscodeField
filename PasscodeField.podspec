@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/tomomura/PasscodeField'
-  s.screenshots     = 'https://github.com/tomomura/PasscodeField/blob/master/ExampleImages/example_passcode.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'famtom0518' => 'am.n04a@gmail.com' }
   s.source           = { :git => 'https://github.com/tomomura/PasscodeField.git', :tag => s.version.to_s }
